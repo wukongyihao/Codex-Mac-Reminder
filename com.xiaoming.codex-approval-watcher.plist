@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.xiaoming.codex-approval-watcher</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/xiaoming/.codex/bin/codex-approval-watcher</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/xiaoming/.codex/log/codex-approval-watcher.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/xiaoming/.codex/log/codex-approval-watcher.log</string>
+</dict>
+</plist>

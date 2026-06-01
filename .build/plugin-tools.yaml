@@ -1,0 +1,392 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module": ["<CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module>"]
+  "CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module": ["<CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module>"]
+  "CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.module": ["<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.module>"]
+  "CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test": ["<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "codex-approval-watcher-arm64-apple-macosx15.0-debug.exe": ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe>"]
+  "codex-approval-watcher-arm64-apple-macosx15.0-debug.module": ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.module>"]
+  "codex-breathing-light-arm64-apple-macosx15.0-debug.exe": ["<codex-breathing-light-arm64-apple-macosx15.0-debug.exe>"]
+  "codex-breathing-light-arm64-apple-macosx15.0-debug.module": ["<codex-breathing-light-arm64-apple-macosx15.0-debug.module>"]
+  "codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe": ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe>"]
+  "codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module": ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module>"]
+  "codex-reminder-agent-arm64-apple-macosx15.0-debug.exe": ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe>"]
+  "codex-reminder-agent-arm64-apple-macosx15.0-debug.module": ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.module>"]
+  "codex-reminder-control-arm64-apple-macosx15.0-debug.exe": ["<codex-reminder-control-arm64-apple-macosx15.0-debug.exe>"]
+  "codex-reminder-control-arm64-apple-macosx15.0-debug.module": ["<codex-reminder-control-arm64-apple-macosx15.0-debug.module>"]
+  "main": ["<CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module>","<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe>","<codex-approval-watcher-arm64-apple-macosx15.0-debug.module>","<codex-breathing-light-arm64-apple-macosx15.0-debug.exe>","<codex-breathing-light-arm64-apple-macosx15.0-debug.module>","<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe>","<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module>","<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe>","<codex-reminder-agent-arm64-apple-macosx15.0-debug.module>","<codex-reminder-control-arm64-apple-macosx15.0-debug.exe>","<codex-reminder-control-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module>","<CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module>","<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test>","<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe>","<codex-approval-watcher-arm64-apple-macosx15.0-debug.module>","<codex-breathing-light-arm64-apple-macosx15.0-debug.exe>","<codex-breathing-light-arm64-apple-macosx15.0-debug.module>","<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe>","<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module>","<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe>","<codex-reminder-agent-arm64-apple-macosx15.0-debug.module>","<codex-reminder-control-arm64-apple-macosx15.0-debug.exe>","<codex-reminder-control-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-agent/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-control/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher":
+    is-mutated: true
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light":
+    is-mutated: true
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui":
+    is-mutated: true
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent":
+    is-mutated: true
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control":
+    is-mutated: true
+commands:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/AlertOptions.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ApprovalWatcherCore.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ReminderState.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/AlertOptionsTests.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/ApprovalWatcherCoreTests.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/ReminderStateTests.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.derived/runner.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.derived/runner.swift"]
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/AlertOptionsTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ApprovalWatcherCoreTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ReminderStateTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/runner.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher-entitlement.plist"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher-entitlement.plist"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/main.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-entitlement.plist"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-entitlement.plist"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui-entitlement.plist"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui-entitlement.plist"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/main.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/main.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent-entitlement.plist"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent-entitlement.plist"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/main.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control-entitlement.plist"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control-entitlement.plist"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/main.swift.o"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control.product/Objects.LinkFileList"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/main.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light/main.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/main.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-agent/main.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-control/main.swift"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/sources"]
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/sources"
+
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule"]
+    outputs: ["<CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module>"]
+
+  "<CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/AlertOptionsTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ApprovalWatcherCoreTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ReminderStateTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCoreTests.swiftmodule"]
+    outputs: ["<CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/runner.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightPackageTests.swiftmodule"]
+    outputs: ["<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.xctest/Contents/MacOS/CodexBreathingLightPackageTests"]
+    outputs: ["<CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test>"]
+
+  "<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<codex-approval-watcher-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_approval_watcher.swiftmodule"]
+    outputs: ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.module>"]
+
+  "<codex-breathing-light-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<codex-breathing-light-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<codex-breathing-light-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<codex-breathing-light-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light.swiftmodule"]
+    outputs: ["<codex-breathing-light-arm64-apple-macosx15.0-debug.module>"]
+
+  "<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light_ui.swiftmodule"]
+    outputs: ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module>"]
+
+  "<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<codex-reminder-agent-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_agent.swiftmodule"]
+    outputs: ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.module>"]
+
+  "<codex-reminder-control-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<codex-reminder-control-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<codex-reminder-control-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<codex-reminder-control-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_control.swiftmodule"]
+    outputs: ["<codex-reminder-control-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.CodexBreathingLightCore-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/AlertOptions.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ApprovalWatcherCore.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ReminderState.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule"]
+    description: "Compiling Swift Module 'CodexBreathingLightCore' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CodexBreathingLightCore","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/CodexBreathingLightCore-Swift.h","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.CodexBreathingLightCoreTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/AlertOptionsTests.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/ApprovalWatcherCoreTests.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/ReminderStateTests.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/AlertOptionsTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ApprovalWatcherCoreTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ReminderStateTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCoreTests.swiftmodule"]
+    description: "Compiling Swift Module 'CodexBreathingLightCoreTests' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CodexBreathingLightCoreTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCoreTests.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.derived/runner.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCoreTests.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/runner.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'CodexBreathingLightPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CodexBreathingLightPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightPackageTests.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/CodexBreathingLightPackageTests-Swift.h","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.CodexBreathingLightPackageTests-arm64-apple-macosx15.0-debug.test":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/AlertOptionsTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ApprovalWatcherCoreTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCoreTests.build/ReminderStateTests.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.build/runner.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.xctest/Contents/MacOS/CodexBreathingLightPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.xctest/Contents/MacOS/CodexBreathingLightPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.xctest/Contents/MacOS/CodexBreathingLightPackageTests","-module-name","CodexBreathingLightPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightPackageTests.product/Objects.LinkFileList","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCoreTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightPackageTests.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-approval-watcher-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/codex-approval-watcher"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher","-module-name","codex_approval_watcher","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_codex_approval_watcher_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_approval_watcher.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-approval-watcher-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher-entitlement.plist"]
+    outputs: ["<codex-approval-watcher-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/codex-approval-watcher"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher-entitlement.plist","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-approval-watcher"]
+
+  "C.codex-approval-watcher-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/main.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_approval_watcher.swiftmodule"]
+    description: "Compiling Swift Module 'codex_approval_watcher' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","codex_approval_watcher","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_approval_watcher.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/output-file-map.json","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_approval_watcher.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","codex_approval_watcher_main","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.codex-breathing-light-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/codex-breathing-light"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light","-module-name","codex_breathing_light","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_codex_breathing_light_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-breathing-light-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-entitlement.plist"]
+    outputs: ["<codex-breathing-light-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/codex-breathing-light"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-entitlement.plist","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light"]
+
+  "C.codex-breathing-light-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light/main.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light.swiftmodule"]
+    description: "Compiling Swift Module 'codex_breathing_light' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","codex_breathing_light","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/output-file-map.json","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","codex_breathing_light_main","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/codex-breathing-light-ui"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui","-module-name","codex_breathing_light_ui","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_codex_breathing_light_ui_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light_ui.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui-entitlement.plist"]
+    outputs: ["<codex-breathing-light-ui-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/codex-breathing-light-ui"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui-entitlement.plist","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-breathing-light-ui"]
+
+  "C.codex-breathing-light-ui-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/main.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light_ui.swiftmodule"]
+    description: "Compiling Swift Module 'codex_breathing_light_ui' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","codex_breathing_light_ui","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_breathing_light_ui.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/output-file-map.json","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_breathing_light_ui.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","codex_breathing_light_ui_main","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.codex-reminder-agent-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/codex-reminder-agent"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent","-module-name","codex_reminder_agent","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_codex_reminder_agent_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_agent.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-reminder-agent-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent-entitlement.plist"]
+    outputs: ["<codex-reminder-agent-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/codex-reminder-agent"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent-entitlement.plist","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-agent"]
+
+  "C.codex-reminder-agent-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-agent/main.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_agent.swiftmodule"]
+    description: "Compiling Swift Module 'codex_reminder_agent' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","codex_reminder_agent","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_agent.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/output-file-map.json","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_agent.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","codex_reminder_agent_main","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "C.codex-reminder-control-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control.product/Objects.LinkFileList"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/codex-reminder-control"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug","-o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control","-module-name","codex_reminder_control","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_codex_reminder_control_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_control.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.codex-reminder-control-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control-entitlement.plist"]
+    outputs: ["<codex-reminder-control-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/codex-reminder-control"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control-entitlement.plist","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex-reminder-control"]
+
+  "C.codex-reminder-control-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-control/main.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/CodexBreathingLightCore.swiftmodule","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/sources"]
+    outputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/main.swift.o","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_control.swiftmodule"]
+    description: "Compiling Swift Module 'codex_reminder_control' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","codex_reminder_control","-emit-dependencies","-emit-module","-emit-module-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules/codex_reminder_control.swiftmodule","-output-file-map","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/output-file-map.json","-incremental","-c","@/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/codex_reminder_control.build/sources","-I","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","codex_reminder_control_main","-swift-version","6","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mac_codex"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-agent/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-control/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Tests/CodexBreathingLightCoreTests/","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Package.swift","/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/codex_reminder_control.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/codex_reminder_control.o",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/master.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-control/main.swift": {
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/main.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_reminder_control.build/main.swiftdeps"
+  }
+}

@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "ea6586ac7fecf810bdd5e74c2feb4abc89bb50502129520826389a41f61940b0"
+build_start_time: [1780047184, 318886000]
+build_end_time: [1780047185, 224590000]
+inputs:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/main.swift": [1780046780, 558700379]

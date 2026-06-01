@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/codex_approval_watcher.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/codex_approval_watcher.o",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/master.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-approval-watcher/main.swift": {
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/main.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_approval_watcher.build/main.swiftdeps"
+  }
+}

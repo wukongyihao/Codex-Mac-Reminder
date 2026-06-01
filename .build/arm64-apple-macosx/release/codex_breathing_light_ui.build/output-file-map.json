@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/codex_breathing_light_ui.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/codex_breathing_light_ui.o",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/master.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/main.swift": {
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/main.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/codex_breathing_light_ui.build/main.swiftdeps"
+  }
+}

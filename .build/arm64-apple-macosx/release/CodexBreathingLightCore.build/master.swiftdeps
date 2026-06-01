@@ -1,0 +1,8 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "7f81ad4a9165804039b8504fbea9002cbc6054797c588686c90573403eab8b1a"
+build_start_time: [1780047183, 192913000]
+build_end_time: [1780047184, 218489000]
+inputs:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/AlertOptions.swift": [1780046780, 407744769]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ApprovalWatcherCore.swift": [1780046249, 634776235]
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ReminderState.swift": [1780047041, 763419900]

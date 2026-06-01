@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "a9d7f6b4f4394b8343ea2d1a0dbe51c4814237455d4fa1f051a827649fbbce3e"
+build_start_time: [1780047184, 318935000]
+build_end_time: [1780047185, 132101000]
+inputs:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-breathing-light-ui/main.swift": [1780046780, 459071269]

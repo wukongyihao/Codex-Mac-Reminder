@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "a98c71dee161765758976f4e7b8445087c85c88eddb95f7261f6a6b2469ad809"
+build_start_time: [1780047184, 319247000]
+build_end_time: [1780047185, 113123000]
+inputs:
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/codex-reminder-agent/main.swift": [1780047084, 887486690]

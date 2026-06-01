@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/master.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/AlertOptions.swift": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/AlertOptions.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ApprovalWatcherCore.swift": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ApprovalWatcherCore.swiftdeps"
+  },
+  "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/Sources/CodexBreathingLightCore/ReminderState.swift": {
+    "dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.d",
+    "object": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swift.o",
+    "swiftmodule": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/debug/CodexBreathingLightCore.build/ReminderState.swiftdeps"
+  }
+}

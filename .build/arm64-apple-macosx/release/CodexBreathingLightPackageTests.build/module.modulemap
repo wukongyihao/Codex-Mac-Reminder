@@ -1,0 +1,4 @@
+module CodexBreathingLightPackageTests {
+    header "/Users/xiaoming/Documents/Codex/2026-05-29/mac-codex/.build/arm64-apple-macosx/release/CodexBreathingLightPackageTests.build/CodexBreathingLightPackageTests-Swift.h"
+    requires objc
+}
